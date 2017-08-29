@@ -1,6 +1,6 @@
-[test]
- Title = Test connecting to a WMS or a WFS Data Store.
- Abstract = Test accessing to a WMS or a WFS Data Store.
+[save]
+ Title = Create or update a istsos Data Store.
+ Abstract = Save service and procedure in Data Store settings.
  processVersion = 1
  storeSupported = true
  statusSupported = true
@@ -18,16 +18,7 @@
    </LiteralData>
   [url]
    Title = The Server Url
-   Abstract = The URL to acces the WMS/WFS Server.
-   minOccurs = 1
-   maxOccurs = 1
-   <LiteralData>
-    DataType = string
-    <Default />
-   </LiteralData>
-  [service]
-   Title = The OGC Protocol
-   Abstract = The type of OGC protocol to use WMS or WFS.
+   Abstract = The URL to acces the istsos Server.
    minOccurs = 1
    maxOccurs = 1
    <LiteralData>
@@ -38,14 +29,9 @@
  <DataOutputs>
   [Result]
    Title = The resulting message
-   Abstract = The message providing informations about tests run to access the WMS or WFS server.
+   Abstract = The message providing information about the creation of istsos Data Store.
    <LiteralData>
     DataType = string
-    <Default>
-     UOM = meter
-    </Default>
-    <Supported>
-     UOM = meter
-    </Supported>
+    <Default />
    </LiteralData>
  </DataOutputs>
