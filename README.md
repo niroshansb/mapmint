@@ -30,3 +30,5 @@ MapMint is using numerous OSGeo softwares and bring them all together in a compl
  ![logo](http://geolabs.fr/mmws2014/_static/images/ol-logo-green.png "OpenLayers logo") | 	MapMint User Interfaces (UI) are using OpenLayers. 
  
 For information on how to setup MapMint, please refer to https://github.com/mapmint/mapmint/blob/master/INSTALL.md.
+
+Recent work on MapMint testing and installation, [URL](https://github.com/niroshansb/gsoc2017)
