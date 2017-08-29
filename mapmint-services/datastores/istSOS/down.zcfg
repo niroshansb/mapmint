@@ -1,0 +1,46 @@
+[down]
+ Title = Create or update a istsos Data Store.
+ Abstract = Save service and procedure in Data Store settings.
+ processVersion = 1
+ storeSupported = true
+ statusSupported = true
+ serviceProvider = service
+ serviceType = Python
+ <DataInputs>
+  [name]
+   Title = The Data Store Name
+   Abstract = The name of the Data Store to create.
+   minOccurs = 1
+   maxOccurs = 1
+   <LiteralData>
+    DataType = string
+    <Default />
+   </LiteralData>
+  [url]
+   Title = The Server Url
+   Abstract = The URL to acces the istsos Server.
+   minOccurs = 1
+   maxOccurs = 1
+   <LiteralData>
+    DataType = string
+    <Default />
+   </LiteralData>
+  [serviceN]
+   Title = istSOS service name
+   Abstract = The service name for the offerings
+   minOccurs = 1
+   maxOccurs = 1
+   <LiteralData>
+    DataType = string
+    <Default />
+   </LiteralData>
+ </DataInputs>
+ <DataOutputs>
+  [Result]
+   Title = The resulting message
+   Abstract = The message providing information about the creation of istsos Data Store.
+   <LiteralData>
+    DataType = string
+    <Default />
+   </LiteralData>
+ </DataOutputs>
