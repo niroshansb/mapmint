@@ -135,6 +135,15 @@ MapMint: $mmodule
       </li>
 #set $cnt+=1
 #end for
+</ul>
+
+<li class="active">
+	<a href="#settings"><i class="fa fa-thermometer-half fa-fw"></i> $zoo._("istSOS Server") <span class="fa arrow"></span></a>
+	<ul class="nav nav-third-level">  </ul>
+
+
+
+
    </ul>
   </li>
 </ul>
@@ -182,6 +191,7 @@ MapMint: $mmodule
 		      <a class="btn btn-default btn-sm fa fa-folder-open" title="$zoo._("Add Directory")" role="tab" data-toggle="tab" data-target="#add-directory" href="#add-directory"></a>
 		      <a class="btn btn-default btn-sm fa fa-database" title="$zoo._("Add DB Connection")" role="tab" data-toggle="tab" data-target="#add-database" href="#add-database"></a>
 		      <a class="btn btn-default btn-sm fa fa-globe" title="$zoo._("Add OGC Server")"  role="tab" data-toggle="tab" data-target="#add-ows" href="#add-ows"></a>
+<a class="btn btn-default btn-sm fa fa-thermometer-half" title="$zoo._("Add istSOS Server")"  role="tab" data-toggle="tab" data-target="#add-sos" href="#add-sos"></a>
 		 </div>
             </div>
 	    <div class="row">
@@ -195,6 +205,13 @@ MapMint: $mmodule
 		      <div role="tabpanel" class="tab-pane" id="add-ows">
 #include $conf['main']['templatesPath']+"/Distiller/wfs/display_bs.html"
 		      </div>
+		     <div role="tabpanel" class="tab-pane" id="add-sos">
+#include $conf['main']['templatesPath']+"/Distiller/istsos/display_bs.html"
+                      </div>
+
+
+
+
 		 </div>
             </div>
             </div>
